@@ -1,13 +1,6 @@
 .title-bar {
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 27px;
-  }
-
-  &__bottom {
-    padding-top: 8px;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {

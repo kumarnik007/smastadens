@@ -9,32 +9,49 @@ export const Header = () => (
       <Navbar />
     </div>
 
-    <div className="header__bottom title-bar">
-      <div className="title-bar__top">
-        <h1 className="title">
-          Småstadens kommun
-        </h1>
+    <div className="header__mid title-bar">
+      <h1 className="title">
+        Småstadens kommun
+      </h1>
 
-        <form className="find-person">
-          <div className="field">
-            <label className="label" htmlFor="person-search" />
+      <form className="find-person">
+        <div className="field">
+          <label className="label" htmlFor="person-search" />
 
-            <div className="control">
-              <input
-                type="text"
-                id="person-search"
-                placeholder="Sök"
-                className="input is-dander"
-                name="query"
-              />
-            </div>
+          <div className="control">
+            <input
+              type="text"
+              id="person-search"
+              placeholder="Sök"
+              className="input is-dander"
+              name="query"
+            />
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
+    </div>
 
-      <div className="title-bar__bottom">
+    <div className="header__bottom header-tabs">
+      <a
+        className="header-tab"
+        href="#"
+      >
+        Organisationshierarki
+      </a>
 
-      </div>
+      <a
+        className="header-tab"
+        href="#"
+      >
+        Schemainställningar
+      </a>
+
+      <a
+        className="header-tab"
+        href="#"
+      >
+        Kontoinställningar
+      </a>
     </div>
   </div>
 );
