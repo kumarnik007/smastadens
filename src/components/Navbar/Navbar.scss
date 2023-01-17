@@ -1,0 +1,14 @@
+.navbar {
+  &-brand {
+    justify-content: space-between;
+    width: 90vw;
+
+    &__left {
+      display: flex;
+    }
+
+    &__right {
+      display: flex;
+    }
+  }
+}
