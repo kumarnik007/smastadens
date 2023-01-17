@@ -11,4 +11,20 @@
       display: flex;
     }
   }
+
+  &-item {
+    color: #4a4a4a;
+
+    &--expand {
+      height: 20px;
+      width: 20px;
+      background-image: url("../../images/expand_more.svg");
+    }
+
+    &:hover {
+      .navbar-item--expand {
+        background-image: url("../../images/expand_more_hover.svg");
+      }
+    }
+  }
 }
