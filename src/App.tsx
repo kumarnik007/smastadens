@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import { KommunPage } from "./components/KommunPage";
 import './App.scss';
+import { data } from "./api/makeData";
 
 export const App = () => {
   return (
@@ -9,7 +10,7 @@ export const App = () => {
       <Header />
 
       <div className="app">
-        <KommunPage />
+        <KommunPage persons={data} />
       </div>
     </>
   );

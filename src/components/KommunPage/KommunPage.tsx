@@ -2,11 +2,14 @@ import React, { useMemo } from 'react';
 import './KommunPage.scss';
 
 import MaterialReactTable, { MRT_Cell, MRT_ColumnDef, MRT_Row, MRT_TableInstance } from 'material-react-table';
-import { Box, Stack } from '@mui/material';
-import { data } from '../../api/makeData';
+import { Box } from '@mui/material';
 import { Person } from '../../types/Person';
 
-export const KommunPage: React.FC = () => {
+interface Props {
+  persons: Person[],
+}
+
+export const KommunPage: React.FC<Props> = ({ persons }) => {
   const columns = useMemo<MRT_ColumnDef<Person>[]>(
     () => [
       {
@@ -74,7 +77,7 @@ export const KommunPage: React.FC = () => {
     <div className="kommun-page">
       <MaterialReactTable
         columns={columns}
-        data={data}
+        data={persons}
         enableGrouping
         enableStickyHeader
         enableStickyFooter
