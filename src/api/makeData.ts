@@ -26,7 +26,7 @@ export const data: Person[] = [
     team: 'Blå',
   },
   {
-    namn: 'Justing Donin',
+    namn: 'Justin Donin',
     tjänstegrad: '90%',
     tjänstetyp: 'Dag/Kväll',
     undantagsregler: '2 st',
