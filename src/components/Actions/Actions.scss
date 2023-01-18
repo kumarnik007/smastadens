@@ -15,6 +15,11 @@
     background: #fff;
     border: 1px solid #00000029;
     border-radius: 8px;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(0.9);
+    }
 
     &--icon {
       @include useSquare (20px);
@@ -43,6 +48,11 @@
     align-items: center;
     border: transparent;
     background: transparent;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(0.9);
+    }
 
     &--icon {
       @include useSquare (24px);
