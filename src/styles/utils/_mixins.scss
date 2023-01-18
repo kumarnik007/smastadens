@@ -1,0 +1,16 @@
+@mixin useFlex($gap) {
+  display: flex;
+  justify-content: space-between;
+  gap: $gap;
+}
+
+@mixin useSquare($side) {
+  width: $side;
+  height: $side;
+}
+
+@mixin containContent($width) {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: $width;
+}

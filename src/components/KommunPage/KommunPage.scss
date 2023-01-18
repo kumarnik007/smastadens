@@ -1,5 +1,5 @@
+@import '../../styles/utils/mixins';
+
 .kommun-page {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 80vw;
+  @include containContent (80vw);
 }

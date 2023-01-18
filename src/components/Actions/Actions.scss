@@ -1,29 +1,23 @@
+@import "../../styles/utils/mixins";
+
 .actions {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 80vw;
-  display: flex;
-  justify-content: space-between;
+  @include containContent (80vw);
+  @include useFlex (0);
   padding: 16px 0 6px;
 
   &__left {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    @include useFlex (8px);
   }
 
   &__button {
-    display: flex;
-    justify-content: space-between;
+    @include useFlex (10px);
     padding: 9px 16px;
-    gap: 10px;
     background: #fff;
     border: 1px solid #00000029;
     border-radius: 8px;
 
     &--icon {
-      width: 20px;
-      height: 20px;
+      @include useSquare (20px);
     }
 
     &--ny-person {
@@ -40,22 +34,18 @@
   }
 
   &__right {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    @include useFlex (16px);
   }
 
   &__action {
-    display: flex;
+    @include useFlex (0);
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border: transparent;
     background: transparent;
 
     &--icon {
-      width: 24px;
-      height: 24px;
+      @include useSquare (24px);
     }
 
     &--impotera {
