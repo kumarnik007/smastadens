@@ -3,7 +3,6 @@
 .header {
   @include containContent (80vw);
   background: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 
   &__mid {
     padding-top: 27px;
