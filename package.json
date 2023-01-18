@@ -1,6 +1,6 @@
 {
   "name": "smastadens",
-  "homepage": "https://kumarnik007.github.io/movies-and-characters/",
+  "homepage": "https://kumarnik007.github.io/smastadens",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -36,8 +36,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
     "bulma": "^0.9.4",
     "classnames": "^2.3.1",
+    "material-react-table": "^1.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1",
