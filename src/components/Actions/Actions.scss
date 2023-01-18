@@ -1,0 +1,73 @@
+.actions {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 6px;
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 16px;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #00000029;
+    border-radius: 8px;
+
+    &--icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--ny-person {
+      background-image: url("../../images/person_add.svg");
+    }
+
+    &--ny-grupp {
+      background-image: url("../../images/group_add.svg");
+    }
+
+    &--ändra-kolumner {
+      background-image: url("../../images/view_column.svg");
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: transparent;
+    background: transparent;
+
+    &--icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--impotera {
+      background-image: url("../../images/exit_to_app.svg");
+    }
+
+    &--expotera {
+      background-image: url("../../images/ios_share.svg");
+    }
+
+    &--dela {
+      background-image: url("../../images/share.svg");
+    }
+  }
+}
