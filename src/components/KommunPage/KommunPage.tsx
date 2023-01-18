@@ -25,6 +25,7 @@ export const KommunPage: React.FC<Props> = ({ persons }) => {
             Grupp {cell.getValue<string>()}
           </>
         ),
+        enableColumnDragging: false,
       },
       {
         header: 'Team',
@@ -37,6 +38,7 @@ export const KommunPage: React.FC<Props> = ({ persons }) => {
             </>
           )
         },
+        enableColumnDragging: false,
       },
       {
         header: 'Tjänstegrad',
@@ -46,6 +48,7 @@ export const KommunPage: React.FC<Props> = ({ persons }) => {
       {
         header: 'Tjänstetyp',
         accessorKey: 'tjänstetyp',
+        enableColumnDragging: false,
       },
       {
         header: 'Undantagsregler',
@@ -81,13 +84,18 @@ export const KommunPage: React.FC<Props> = ({ persons }) => {
         enableGrouping
         enableStickyHeader
         enableStickyFooter
+        enableHiding={false}
+        enableFilters={false}
+        enableTopToolbar={false}
         initialState={{
           density: 'compact',
-          expanded: true, //expand all groups by default
-          grouping: ['grupp', 'team'], //an array of columns to group by by default (can be multiple)
+          expanded: true,
+          grouping: ['grupp', 'team'],
           pagination: { pageIndex: 0, pageSize: 100 },
-          sorting: [{ id: 'namn', desc: false }], //sort by name by default
         }}
+        muiTableContainerProps={{ sx: { maxHeight: 2000 } }}
+        muiTableHeadRowProps={{ sx: { backgroundColor: '#d9d9d9' } }}
+        muiTablePaperProps={{ sx: { boxShadow: 'none' } }}
       />
     </div>
   );
