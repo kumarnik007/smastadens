@@ -1,5 +1,6 @@
 @import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
 
 .kommun-page {
-  @include containContent (80vw);
+  @include containContent ($contentWidth);
 }

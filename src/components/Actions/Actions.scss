@@ -1,7 +1,8 @@
-@import "../../styles/utils/mixins";
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
 
 .actions {
-  @include containContent (80vw);
+  @include containContent ($contentWidth);
   @include useFlex (0);
   padding: 16px 0 6px;
 

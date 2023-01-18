@@ -1,7 +1,8 @@
-@import "../../styles/utils/mixins";
+@import '../../styles/utils/mixins';
+@import '../../styles/utils/variables';
 
 .header {
-  @include containContent (80vw);
+  @include containContent ($contentWidth);
   background: #ffffff;
 
   &__mid {
