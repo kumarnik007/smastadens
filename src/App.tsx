@@ -13,16 +13,16 @@ export const App = () => {
   ), [query, data]);
 
   return (
-    <>
+    <div className="app">
       <Header
         query={query}
         onSetQuery={setQuery}
       />
 
-      <div className="app">
+      <div className="app__body">
         <Actions />
         <KommunPage persons={persons} />
       </div>
-    </>
+    </div>
   );
 };

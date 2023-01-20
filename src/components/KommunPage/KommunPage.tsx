@@ -96,6 +96,7 @@ export const KommunPage: React.FC<Props> = ({ persons }) => {
         muiTableContainerProps={{ sx: { maxHeight: 2000 } }}
         muiTableHeadRowProps={{ sx: { backgroundColor: '#d9d9d9' } }}
         muiTablePaperProps={{ sx: { boxShadow: 'none' } }}
+        muiTableBodyCellProps={{ sx: { fontFamily: ['Nunito', 'sans-serif'], fontWeight: 500 } }}
       />
     </div>
   );
