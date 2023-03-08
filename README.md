@@ -1,56 +1,86 @@
-# Description
+# Small-town-municipality
 
-This is a skeleton of any react project. This specimen can be modified to build any application desired. To start building an application out of this project, follow the steps metioned below :
+Implement the `App` with a home page to display a table with details of persons in an organisation. The `App` has a navigation bar with links. The `App` contains header with the title, seaarch bar and links for different tabs. There is an action bar which has some actions for the data being rendered in the table.
+Static data from within the code has been used to display in tabular form. The data can be grouped as per the value of `Grupp` (Group) column, `Team` (team) column and `Tjänstetyp` (service type) column. The data can be sorted by any single column value either in ascending or descending order.
 
-1. Clone this project :
+## Demo
+https://sapnachoudhary06.github.io/small-town-municipality/
+
+## Run Locally
+
+Clone the project
+
 ```bash
-  git clone https://github.com/kumarnik007/react_skeleton_project.git
+  https://github.com/sapnachoudhary06/small-town-municipality.git
 ```
-2. Delete the `.git` directory present at the root of the project.
-3. Rename the project directory from `react_skeleton_project` to `<Desired name for the project>`.
-4. Open the renamed directory with VS Code.
-5. Open a terminal and initialiaze a local git repository for this project.
+
+Go to the project directory
+
 ```bash
-  git init
+  cd small-town-municipality
 ```
-6. Open the `index.html` from the `public` directory present at the root of this project.
-7. Change the value of `title` tag in the `head` of the `index.html` from `react_skeleton_project` to `<Desired name for the project>`.
-8. Open the `index.tsx` from the `src` directory present at the root of this project.
-9. Change the value of the rendered `h1` tag inside `render` method from `<h1>Hello Pokemons!!</h1>` to `<h1>Hello <Desired title>!!</h1>`.
-8. Open the `package.json` present at the root of this project.
-9. Change the value of `name` from `specimen` to `Desired application name`.
-10. Change the value of `homepage` from `.` to `https://<github user name>.github.io/<name of the application>`.
-11. Change the value of `author` from `Nikhil Kumar` to `<your name>`.
-12. If you want to later deploy your project to github, run the below command :
+
+Install dependencies
+
 ```bash
-  npm install --save gh-pages
+  npm install
 ```
-13. Stage all the files in the project directory for commit.
+
+Start the server
+
 ```bash
-  git add .
+  npm start
 ```
-14. Commit the changes to local git repository.
+
+## Deployment
+
+To deploy this project run
+
 ```bash
-  git commit -m '<Some message>'
+  npm run deploy
 ```
-15. To make the project available on github, follow below steps :
-    - Go to your repositories on github.
-    - Click on the `+` sign to the left your profile picture on the top right corner.
-    - Click on `New Repository`.
-    - Put the project name used above step (3) in the `Repository field`.
-    - Check the `Private` checkbox, if you want the repository to be visible only to you and some people whom you grant access.
-    - Check the `Public` checkbox, if you want the repository to be visible to everyone in the internet.
-    - Click the `Create Repository` button at the end.
-    - Copy the repository https link, something of the form `https://github.com/kumarnik007/react_skeleton_project.git`.
-    - Go back to VS Code and in terminal execute the below command :
-      ```bash
-        git remote add origin <REMOTE URL copied in previous step>
-      ```
-    - Rename the local git branch from `master` to `main`
-      ```bash
-        git branch -m main
-      ```
-    - Push the changes to github
-      ```bash
-        git push origin main
-      ```
+
+## 🛠 Skills
+Javascript, TypeScript, HTML, CSS, SCSS, Bulma, React and hooks.
+
+
+## Assumptions/Limitations
+1. The navigation links, tabs links and action buttons are dummy links/buttons to the home page (#) as the required functionality on clicking them was not mentioned anywhere.
+2. The data by default is grouped by `grupp` column value and then by `team` column value.
+3. Static data has been used in the table.
+4. Buttons in left and right part of actions bar have been given a scale-in effect on hover, just to indicate they are buttons.
+5. The search bar is used only for the filtering rows based on namn (name).
+6. Table data can only by grouped by `grupp`, `team` and `tjänstetyp` columns.
+7. `Organisationshieraki` button in tabs bar is set to be active by default.
+
+
+## Original Problem Statement
+
+In this code test, you are asked to implement a static web page, following a UX/UI
+wireframe as specified in the attached Figma file. This wireframe, as you will see,
+contains a table with sorting and grouping functionality.
+These are the guidelines you are asked to follow:
+
+1. The web page can be static, meaning that you don’t need to build a backend,
+but can simply use static data to display. If you choose to build a backend too,
+that would be a bonus.
+2. Use React and Typescript. You can use whatever packages or libraries you like.
+Feel free to use or be inspired by this resource: https://www.material-reacttable.com/docs/examples/aggregation-and-grouping
+3. Publish your final code in a GitHub repository that you can share with us. Do
+not make the repository public. It should be kept private.
+4. Share your result in one of the two following ways. We recommend option a.
+a. It is encouraged to deploy your code on some deployment service, so
+that you can share a live version of the web page that we can view and
+interact with. Do not make this deployment of the web page public. It
+should be kept private.
+b. You can also share your code as-is, but in that case, you should make
+sure to provide detailed instructions for us to run it ourselves on a local
+environment.
+5. You have 1 week to finish the code test, counting from when you received
+these instructions. Please let us know if you would like to have more time.
+There are 4 aspects that we are particularly interested in when evaluating your code:
+1. How well you can follow a UX/UI wireframe, in terms of both look-and-feel as
+well as functionality
+2. Your proficiency in React as a framework and Typescript as a language
+3. Your ability to work independently
+4. Your strengths as a programmer – make sure to showcase your strengths!
